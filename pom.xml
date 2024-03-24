@@ -154,7 +154,22 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		    <plugins>
+		        <plugin>
+		            <groupId>com.mycila</groupId>
+		            <artifactId>license-maven-plugin</artifactId>
+		            <version>3.0</version>
+		            <executions>
+		                <execution>
+		                    <goals>
+		                        <goal>check</goal>
+		                    </goals>
+		                </execution>
+		            </executions>
+		        </plugin>
+		    </plugins>
 	</build>
+	
 	<version>1.8-SNAPSHOT</version>
 	<name>Spring3HibernateApp</name>
 	<url>http://maven.apache.org</url>
